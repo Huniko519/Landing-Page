@@ -1,0 +1,250 @@
+/* Google Fonts. */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+/* General. */
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  line-height: 1.1em;
+}
+
+p {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Slider. */
+.slider {
+  background-color: #f9f9f9;
+}
+.slider .slider-control {
+  background-color: transparent;
+}
+.slider .slider-control.left {
+  color: #fff;
+}
+.slider .slider-control.right {
+  color: #fff;
+}
+
+.slide-body {
+  width: 100%;
+}
+
+.content {
+  background-color: #f9f9f9;
+  padding: 35px;
+  text-align: center;
+}
+.content h2 {
+  color: #b96c55;
+  margin: -20px 0 35px;
+  text-transform: uppercase;
+}
+.content p {
+  color: #000;
+}
+
+.breadcrumb {
+  padding: 50px;
+}
+.breadcrumb h4 {
+  color: #b96c55;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bg {
+  margin-top: 10px;
+}
+
+.align-center {
+  background-color: #fff;
+  color: #000;
+  margin: 5px 0 10px;
+  padding: 30px;
+  text-align: center;
+}
+.align-center:hover {
+  border-bottom: 15px solid transparent;
+  border-color: #b96c55;
+  margin-top: -5px;
+  -webkit-box-shadow: 1px 1px 1px 2px #b96c55;
+  box-shadow: 1px 1px 1px 2px #b96c55;
+}
+
+.boxs {
+  margin-top: 30px;
+}
+
+.icon {
+  color: #b96c55;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* List groups. */
+.list-group {
+  margin: 80px 0;
+  padding-left: 0;
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid #eee;
+  color: #000;
+  display: block;
+  margin-bottom: -1px;
+  padding: 10px 15px;
+  position: relative;
+}
+.list-group-item:hover {
+  background-color: #b96c55;
+  border-color: #b96c55;
+}
+
+.image {
+  margin-top: 80px;
+}
+
+/* Callaction. */
+#callaction {
+  border: 1px solid  #fafafa;
+  border-bottom: 2px solid  #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.cta-text {
+  margin-top: 10px;
+  text-align: left;
+}
+.cta-text h3 {
+  line-height: 1.3em;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  float: right;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+footer {
+  margin-top: 35px;
+}
+
+/* Buttons. */
+.btn-skin {
+  background-color: #b96c55;
+  border-color: #b96c55;
+  color: #fff;
+}
+.btn-skin:hover {
+  -webkit-transition: background 0.7s ease-in-out;
+  -o-transition: background 0.7s ease-in-out;
+  transition: background 0.7s ease-in-out;
+}
+.btn-skin:hover, .btn-skin:focus, .btn-skin:active, .btn-skin.active {
+  color: #fff;
+}
+
+.btn-lg {
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 1.5em;
+  margin: 5px;
+  padding: 10px 36px;
+}
+
+/* Elements. */
+.btn {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+
+.btn-skin:hover, .btn-skin:focus, .btn-skin:active, .btn-skin .active {
+  background-color: #854911;
+  border-color: #854911;
+  color: #fff;
+}
+
+/* Mediq queries. */
+@media (min-width: 768px) and (max-width: 979px) {
+  .img-responsive {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .cta-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cta-text p {
+    text-align: center;
+  }
+
+  .cta-btn {
+    float: none;
+    text-align: center;
+  }
+
+  .copyright {
+    float: none;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .slider {
+    display: none;
+  }
+
+  .img-responsive {
+    display: block;
+    height: 50%;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .cta-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cta-text p {
+    text-align: center;
+  }
+
+  .cta-btn {
+    float: none;
+    text-align: center;
+  }
+
+  .copyright {
+    float: none;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .img-responsive {
+    display: none;
+  }
+}
