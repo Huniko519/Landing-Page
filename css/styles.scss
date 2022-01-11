@@ -1,0 +1,302 @@
+/* Google Fonts. */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+// Colors.
+$black: #000;
+$gray-111: #111;
+$gray-222: #222;
+$gray-333: #333;
+$gray-444: #444;
+$gray-555: #555;
+$gray-666: #666;
+$gray-777: #777;
+$gray-888: #888;
+$gray-999: #999;
+$gray-aaa: #aaa;
+$gray-bbb: #bbb;
+$gray-ccc: #ccc;
+$gray-ddd: #ddd;
+$gray-eee: #eee;
+$primary-color: #b96c55;
+$secondary-color: #854911;
+$white: #fff;
+
+// Lists.
+$list-headers: h1, h2, h3, h4, h5, h6;
+
+// Mixins.
+@mixin transition($transition...) {
+    -webkit-transition:  $transition;
+    -o-transition:  $transition;
+    transition:  $transition;
+}
+@mixin shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+/* General. */
+body {
+    background-color: $white;
+    color: $black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+#{$list-headers} {
+    color: $black;
+    line-height: 1.1em;
+}
+
+p {
+    color: $black;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* Slider. */
+.slider {
+    background-color: #f9f9f9;
+
+    .slider-control {
+        background-color: transparent;
+
+        &.left {
+            color: $white;
+        }
+        &.right {
+            color: $white;
+        }
+    }
+}
+
+.slide-body {
+    width: 100%;
+}
+
+.content {
+    background-color: #f9f9f9;
+    padding: 35px;
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+        margin: -20px 0 35px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $black;
+    }
+}
+
+.breadcrumb {
+    padding: 50px;
+
+    h4 {
+        color: $primary-color;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.bg {
+    margin-top: 10px;
+}
+
+.align-center {
+    background-color: $white;
+    color: $black;
+    margin: 5px 0 10px;
+    padding: 30px;
+    text-align: center;
+
+    &:hover {
+        border-bottom: 15px solid transparent;
+        border-color: $primary-color;
+        margin-top: -5px;
+
+        @include shadow(1px 1px 1px 2px $primary-color);
+    }
+}
+
+.boxs {
+    margin-top: 30px;
+}
+
+.icon {
+    color: $primary-color;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* List groups. */
+
+.list-group {
+    margin: 80px 0;
+    padding-left: 0;
+}
+
+.list-group-item {
+    background-color: $white;
+    border: 1px solid $gray-eee;
+    color: $black;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    position: relative;
+
+    &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+
+.image {
+    margin-top: 80px;
+}
+
+/* Callaction. */
+#callaction {
+    border: 1px solid  #fafafa;
+    border-bottom: 2px solid  #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cta-text {
+    margin-top: 10px;
+    text-align: left;
+
+    h3 {
+        line-height: 1.3em;
+        margin-bottom: 20px;
+    }
+}
+
+.cta-btn {
+    float: right;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+footer {
+    margin-top: 35px;
+}
+
+/* Buttons. */
+
+.btn-skin {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+
+    &:hover {
+        @include transition(background 0.7s ease-in-out);
+    }
+    &:hover, &:focus, &:active, &.active {
+        color: $white;
+    }
+}
+
+.btn-lg {
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 5px;
+    padding: 10px 36px;
+}
+
+/* Elements. */
+.btn {
+    color: $white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    outline: none;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+}
+
+.btn-skin {
+    &:hover, &:focus, &:active, .active {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: $white;
+    }
+}
+
+/* Mediq queries. */
+@media (min-width: 768px) and (max-width: 979px) {
+    .img-responsive {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cta-text {
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .cta-btn {
+        float: none;
+        text-align: center;
+    }
+
+    .copyright {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider {
+        display: none;
+    }
+
+    .img-responsive {
+        display: block;
+        height: 50%;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .cta-text {
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .cta-btn {
+        float: none;
+        text-align: center;
+    }
+
+    .copyright {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-responsive {
+        display: none;
+    }
+}
